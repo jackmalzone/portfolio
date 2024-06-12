@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <nav class="sidebar">
+      <ul class="sidebar__list">
+        <li class="sidebar__item">
+          <a class="sidebar__link" href="#home">Home</a>
+        </li>
+        <li class="sidebar__item">
+          <a class="sidebar__link" href="#projects">Projects</a>
+        </li>
+        <li class="sidebar__item">
+          <a class="sidebar__link" href="#skills">Skills</a>
+        </li>
+        <li class="sidebar__item">
+          <a class="sidebar__link" href="#about">About</a>
+        </li>
+        <li class="sidebar__item">
+          <a class="sidebar__link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="content">
+      <section class="section section-home" id="home">
+        <h1 class="section__title">Welcome to My Interactive Portfolio</h1>
+        <p class="section__description">
+          Explore my journey and projects through an engaging and immersive
+          experience.
+        </p>
+      </section>
+      <section class="section section-projects" id="projects">
+        <h1 class="section__title">Projects</h1>
+        <div class="project">
+          <h2 class="project__title">Project Title</h2>
+          <p class="project__description">
+            Project description with interactive elements and case studies.
+          </p>
+        </div>
+      </section>
+      <section class="section section-skills" id="skills">
+        <h1 class="section__title">Skills</h1>
+        <p class="section__description">
+          Overview of technical and soft skills, with interactive quizzes and
+          demonstrations.
+        </p>
+      </section>
+      <section class="section section-about" id="about">
+        <h1 class="section__title">About Me</h1>
+        <p class="section__description">
+          Personal background, career goals, and a virtual tour of my workspace.
+        </p>
+      </section>
+      <section class="section section-contact" id="contact">
+        <h1 class="section__title">Contact</h1>
+        <form class="contact-form">
+          <input
+            class="contact-form__input"
+            type="text"
+            name="name"
+            placeholder="Your Name"
+          />
+          <input
+            class="contact-form__input"
+            type="email"
+            name="email"
+            placeholder="Your Email"
+          />
+          <textarea
+            class="contact-form__textarea"
+            name="message"
+            placeholder="Your Message"
+          ></textarea>
+          <button
+            class="contact-form__button"
+            id="contact-send-button"
+            type="submit"
+            aria-label="Send Message"
+          >
+            Send
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <script defer src="./page/index.js" type="module"></script>
+  </body>
+</html>
